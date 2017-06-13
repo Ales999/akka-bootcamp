@@ -21,7 +21,7 @@ namespace WinTail
 
             } else if (message is Messages.InputSuccess)
             {
-                var msg = message as Messages.InputSuccess;
+                var msg = (Messages.InputSuccess) message;
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine(msg.Reason);
             }
